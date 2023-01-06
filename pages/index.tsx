@@ -165,18 +165,18 @@ const Page = () => {
           }}
           className="absolute touch-none"
         />
-        <div className="absolute top-0 w-full pointer-events-none">
+        <div className="absolute top-0 w-full pointer-events-none touch-none">
           <div
             className={`${
               !open ? "-translate-y-40" : "translate-y-0"
-            } transition-transform ease-in-out duration-300`}
+            } transition-transform ease-in-out duration-300 touch-none`}
           >
             <div
-              className={`pointer-events-auto w-full h-40 bg-sky-900/80 flex px-10 items-center justify-start overflow-x-scroll snap-x snap-mandatory [&>div]:snap-center [&>div]:flex-shrink-0`}
+              className={`pointer-events-auto w-full h-40 bg-sky-900/80 flex px-10 items-center justify-start overflow-x-scroll snap-x snap-mandatory [&>div]:snap-center [&>div]:flex-shrink-0 touch-pan-x`}
             >
               <WebLinks />
             </div>
-            <div className="mx-auto w-96 h-14 flex justify-evenly items-center">
+            <div className="mx-auto w-96 h-14 flex justify-evenly items-center touch-none">
               <div
                 onClick={() => setOpen(!open)}
                 className={`${
