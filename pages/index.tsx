@@ -132,7 +132,7 @@ const Page = () => {
             80px 80px, 80px 80px, 80px 80px;
         }
       `}</style>
-      <div className="relative background flex-1 overflow-hidden">
+      <div className="relative background flex-1 overflow-hidden touch-none">
         <canvas
           ref={canvasRef}
           width={3000}
@@ -140,28 +140,30 @@ const Page = () => {
           onMouseLeave={resetDrawControls}
           onMouseDown={(e) => {
             e.preventDefault();
+            e.stopPropagation();
             startDrawing(e.clientX, e.clientY);
           }}
           onMouseUp={resetDrawControls}
           onMouseMove={(e) => {
             e.preventDefault();
+            e.stopPropagation();
             if (drawControls.current.isDrawing) {
               draw(e.clientX, e.clientY);
             }
           }}
           onTouchCancel={resetDrawControls}
           onTouchStart={(e) => {
-            e.preventDefault();
+            e.stopPropagation();
             startDrawing(e.touches[0].clientX, e.touches[0].clientY);
           }}
           onTouchEnd={resetDrawControls}
           onTouchMove={(e) => {
-            e.preventDefault();
+            e.stopPropagation();
             if (drawControls.current.isDrawing) {
               draw(e.touches[0].clientX, e.touches[0].clientY);
             }
           }}
-          className="absolute"
+          className="absolute touch-none"
         />
         <div className="absolute top-0 w-full pointer-events-none">
           <div
@@ -170,7 +172,7 @@ const Page = () => {
             } transition-transform ease-in-out duration-300`}
           >
             <div
-              className={`pointer-events-auto w-full h-40 bg-sky-900/80 flex px-10 items-center justify-start overflow-x-scroll snap-x [&>div]:snap-center [&>div]:flex-shrink-0`}
+              className={`pointer-events-auto w-full h-40 bg-sky-900/80 flex px-10 items-center justify-start overflow-x-scroll snap-x snap-mandatory [&>div]:snap-center [&>div]:flex-shrink-0`}
             >
               <WebLinks />
             </div>
@@ -181,7 +183,7 @@ const Page = () => {
                   mobile
                     ? "active:scale-110"
                     : "hover:cursor-pointer hover:scale-110"
-                } flex justify-center items-center h-8 w-8 rounded-full pointer-events-auto shadow transition-all border-gray-500 border-2 bg-white`}
+                } flex justify-center items-center h-8 w-8 rounded-full pointer-events-auto shadow-lg transition-all border-gray-700/90 border bg-white`}
               >
                 <i className="fa-solid fa-bars pointer-events-none"></i>
               </div>
