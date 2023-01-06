@@ -138,19 +138,25 @@ const Page = () => {
           width={3000}
           height={2000}
           onMouseLeave={resetDrawControls}
-          onMouseDown={(e) => startDrawing(e.clientX, e.clientY)}
+          onMouseDown={(e) => {
+            e.preventDefault();
+            startDrawing(e.clientX, e.clientY);
+          }}
           onMouseUp={resetDrawControls}
           onMouseMove={(e) => {
+            e.preventDefault();
             if (drawControls.current.isDrawing) {
               draw(e.clientX, e.clientY);
             }
           }}
           onTouchCancel={resetDrawControls}
           onTouchStart={(e) => {
+            e.preventDefault();
             startDrawing(e.touches[0].clientX, e.touches[0].clientY);
           }}
           onTouchEnd={resetDrawControls}
           onTouchMove={(e) => {
+            e.preventDefault();
             if (drawControls.current.isDrawing) {
               draw(e.touches[0].clientX, e.touches[0].clientY);
             }
