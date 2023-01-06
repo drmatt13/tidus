@@ -160,7 +160,7 @@ const Page = () => {
         <div className="absolute top-0 w-full pointer-events-none">
           <div
             className={`${
-              open ? "-translate-y-40" : "translate-y-0"
+              !open ? "-translate-y-40" : "translate-y-0"
             } transition-transform ease-in-out duration-300`}
           >
             <div
