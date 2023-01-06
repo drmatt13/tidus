@@ -185,7 +185,11 @@ const Page = () => {
                     : "hover:cursor-pointer hover:scale-110"
                 } flex justify-center items-center h-8 w-8 rounded-full pointer-events-auto shadow-lg transition-all border-gray-700/90 border bg-white`}
               >
-                <i className="fa-solid fa-bars pointer-events-none"></i>
+                <i
+                  className={`${
+                    open ? "fa-angle-up" : "fa-bars"
+                  }  fa-solid pointer-events-none`}
+                />
               </div>
               <div
                 onClick={() => setSelectedColor("black")}
@@ -256,7 +260,7 @@ const Page = () => {
             mobile
               ? "active:scale-110 active:bg-red-400"
               : "hover:cursor-pointer hover:scale-110 hover:bg-red-400"
-          } absolute bottom-6 right-6 h-8 w-8 rounded-full bg-red-500 flex justify-center items-center  transition-all`}
+          } absolute bottom-24 md:bottom-10 right-10 h-8 w-8 rounded-full bg-red-500 flex justify-center items-center  transition-all`}
         >
           <i className="fas fa-times" />
         </div>

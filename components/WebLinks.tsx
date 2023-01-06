@@ -15,7 +15,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@babyteeth4/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -26,7 +26,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@madhorror/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -37,7 +37,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@CoComelon/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -49,7 +49,7 @@ const WebLinks = () => {
         </Link>
       </div>
 
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@msrachel/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -60,7 +60,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@TheMikMaks/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -71,7 +71,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@dbillions/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -83,7 +83,7 @@ const WebLinks = () => {
         </Link>
       </div>
 
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@StuntsAmazing/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -94,7 +94,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@armandohibo1/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -105,7 +105,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://pbskids.org">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -116,7 +116,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@kiddosworldtv/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -128,7 +128,7 @@ const WebLinks = () => {
         </Link>
       </div>
 
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/playlist?list=PLJYf0JdTApCrVnJpQgUb4BQm_5I3KuvZZ">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -139,7 +139,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://banned.video">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -150,7 +150,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/playlist?list=PL_c_E65G1OS6v-ppxy1voHV1LB-owLUqa">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -161,7 +161,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@JasonVlogslife/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
@@ -172,7 +172,7 @@ const WebLinks = () => {
           />
         </Link>
       </div>
-      <div className="h-28 w-28 ml-8">
+      <div className="h-28 w-28 ml-6 md:ml-8">
         <Link href="https://www.youtube.com/@ZoeyDoodleDog/videos">
           <Image
             className="transition-transform hover:scale-95 rounded-lg"
